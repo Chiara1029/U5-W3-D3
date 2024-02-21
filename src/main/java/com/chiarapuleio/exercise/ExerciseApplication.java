@@ -18,10 +18,10 @@ public class ExerciseApplication {
 
 		Info user = new Info("Chiara", "Puleio", LocalDate.of(1994,10,29));
 		Adapter userAd = new Adapter(user);
-		System.out.println(userAd.getNomeCompleto());
-		System.out.println(userAd.getEta());
+		System.out.println(userAd.getFullName());
+		System.out.println(userAd.getAge());
 
-		UserData userDt = new UserData(userAd.getNomeCompleto(), userAd.getEta());
+		UserData userDt = new UserData(userAd.getFullName(), userAd.getAge());
 		userDt.getData(userAd);
 	}
 
