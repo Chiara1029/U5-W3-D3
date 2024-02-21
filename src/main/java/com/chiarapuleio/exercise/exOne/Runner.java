@@ -12,7 +12,7 @@ public class Runner implements CommandLineRunner {
         Info user = new Info("Chiara", "Puleio", LocalDate.of(1994,10,29));
         Adapter userAd = new Adapter(user);
 
-        System.out.println(userAd.getNomeCompleto());
-        System.out.println(userAd.getEta());
+        System.out.println(userAd.getFullName());
+        System.out.println(userAd.getAge());
     }
 }
